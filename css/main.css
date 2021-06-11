@@ -7,86 +7,86 @@
 
 body {
   background-color:black;
+  /* overflow: hidden; */
 }
 
-.library {
+.theater {
   position: relative;
   text-align: center;
   width: 100vw;
   height: 100vh;
   font-size: 30px;
   font-family: 'Gmarket';
-  color:beige
-  /* overflow: hidden; */
+  color:beige;
 }
-.library #backGround {
+.theater #backGround {
   width: 85vw;
 }
-.library .theater__main {
+.theater .theater__main {
   display: flex;
   position: absolute;
   width: 59vw;
   top: 23vh;
   left: 21vw;
 }
-.library .theater__main img {
+.theater .theater__main img {
   height: 25vw;
   border-radius: 10px;
 }
-.library .theater__main .movie__info {
+.theater .theater__main .movie__info {
   width: 50vw;
   padding: 0 2vw;
   text-align: start;
 }
-.library .theater__main .movie__title {
+.theater .theater__main .movie__title {
   font-size: 60px;
   margin-bottom: 25px;
 }
-.library .theater__main .movie__eval {
+.theater .theater__main .movie__eval {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
-.library .theater__main .movie__eval p {
+.theater .theater__main .movie__eval p {
   margin-top: 15px;
   color: whitesmoke;
 }
-.library .theater__main .movie__eval .movie__release {
+.theater .theater__main .movie__eval .movie__release {
 }
-.library .theater__main .movie__eval .movie__release p {
+.theater .theater__main .movie__eval .movie__release p {
   
 }
-.library .theater__main .movie__eval .movie__grade {
+.theater .theater__main .movie__eval .movie__grade {
 
 }
-.library .theater__main .movie__eval .movie__grade p span {
+.theater .theater__main .movie__eval .movie__grade p span {
   color: red;
 }
-.library .theater__main .movie__story {
+.theater .theater__main .movie__story {
   height: 15vh;
 }
-.library .theater__main .movie__story .story__info {
+.theater .theater__main .movie__story .story__info {
   font-size: 18px;
   height: 10vh;
   overflow-y: auto;
   color: whitesmoke;
 }
-.library .theater__main .movie__story .story__info::-webkit-scrollbar {
+.theater .theater__main .movie__story .story__info::-webkit-scrollbar {
   width: 4px ;
   color: aliceblue;
 }
-.library .theater__main .movie__story .story__info::-webkit-scrollbar-thumb{ 
+.theater .theater__main .movie__story .story__info::-webkit-scrollbar-thumb{ 
 height: 17%; 
 background-color: wheat; 
 border-radius: 10px;
 }
-.library .theater__main .movie__story .story__info::-webkit-scrollbar-track {
+.theater .theater__main .movie__story .story__info::-webkit-scrollbar-track {
   background-color: gray;
 }
-.library .theater__main .movie__clip {
+.theater .theater__main .movie__clip {
   
 }
-.library .theater__main .movie__clip .clip__pic {
+.theater .theater__main .movie__clip .clip__pic {
   width: 37vw;
   display: flex;
   background-color: black;
@@ -96,13 +96,13 @@ border-radius: 10px;
   padding: 5px;
   margin-top: 5px;
 }
-.library .theater__main .movie__clip .clip__pic img {
+.theater .theater__main .movie__clip .clip__pic img {
   margin: 0 10px;
   width: 6.3vw;
   height: auto;
   transition: .4s;
 }
-.library .theater__main .movie__clip .clip__pic img:hover {
+.theater .theater__main .movie__clip .clip__pic img:hover {
   transform: scale(4) translateY(-60px);
   -webkit-transform: scale(4) translateY(-60px);
   border: 2px solid black;
