@@ -9,6 +9,7 @@ const movieScore = document.querySelector(".movie__grade p")
 const movieStory = document.querySelector(".story__info")
 const enterBtn = document.querySelector(".door")
 const theaterSection = document.querySelector(".theater")
+const backToTop = document.querySelector(".backToTop")
 let movieNum = 0
 const movies = [
   {
@@ -36,6 +37,11 @@ const movies = [
 const totalNum = movies.length
 
 window.onload = function () {
+  setTimeout(function () {
+    scrollTo(0, 0)
+  }, 0)
+
+
   prev.addEventListener('click', function () {
     if (movieNum > 0) {
       movieNum--
@@ -56,13 +62,40 @@ window.onload = function () {
   movieNum = Math.floor(Math.random() * (totalNum))
   ChangeFunc()
 
+
+  // enterBtn.addEventListener('click', function () {
+  //   window.scrollTo({
+  //     top: theaterSection.offsetTop,
+  //     behavior: 'smooth'
+  //   })
+  // })
   enterBtn.addEventListener('click', function () {
-    window.scrollTo({
-      top: theaterSection.offsetTop,
-      behavior: 'smooth'
-    })
+    TweenMax.to(window, 1.5, {
+      scrollTo: {
+        y: ".theater",
+        autoKill: true,
+      },
+      ease: Power3.easeInOut
+    });
   })
 }
+
+// backToTop.addEventListener("click", function () {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   })
+// })
+backToTop.addEventListener("click", function () {
+  TweenMax.to(window, 1.5, {
+    scrollTo: {
+      y: 0,
+      autoKill: true,
+    },
+    ease: Power3.easeInOut
+  });
+})
+
 
 function ChangeFunc() {
   roomNum.textContent = movieNum + 1

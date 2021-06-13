@@ -28,14 +28,20 @@
   position: absolute;
   bottom:5vh;
   left: 38%;
+  cursor: pointer;
+}
+.theater2 .door:hover {
+  transform: scale(1.1);
 }
 .theater2 .arrow {
   width: 5vw;
   position: absolute;
   bottom: 20vh;
+  animation: slidein 1s ease-in infinite alternate;
 }
 .theater2 .arrow.left {
   left: 15vw;
+  
 }
 .theater2 .arrow.right {
   right: 15vw;
@@ -107,6 +113,16 @@
     0 0 .2vw #ffe9d1, 
     .2vw .3vw .1vw #3b2e22;
     color: #3b2e22;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-bottom: .5%;
+  }
+
+  100% {
+    margin-bottom: 0%;
   }
 }
 
