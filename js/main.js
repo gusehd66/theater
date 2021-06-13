@@ -7,6 +7,8 @@ const moviePoster = document.querySelector("#moviePoster")
 const movieOpen = document.querySelector(".movie__release p")
 const movieScore = document.querySelector(".movie__grade p")
 const movieStory = document.querySelector(".story__info")
+const enterBtn = document.querySelector(".door")
+const theaterSection = document.querySelector(".theater")
 let movieNum = 0
 const movies = [
   {
@@ -53,6 +55,13 @@ window.onload = function () {
   })
   movieNum = Math.floor(Math.random() * (totalNum))
   ChangeFunc()
+
+  enterBtn.addEventListener('click', function () {
+    window.scrollTo({
+      top: theaterSection.offsetTop,
+      behavior: 'smooth'
+    })
+  })
 }
 
 function ChangeFunc() {
