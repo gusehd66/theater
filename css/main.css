@@ -39,7 +39,8 @@ body {
   text-align: start;
 }
 .theater .theater__main .movie__title {
-  font-size: 60px;
+  margin-top: 10px;
+  font-size: 50px;
   margin-bottom: 25px;
 }
 .theater .theater__main .movie__eval {
@@ -58,6 +59,13 @@ body {
 }
 .theater .theater__main .movie__eval .movie__grade {
 
+}
+.theater .theater__main .movie__eval .movie__review {
+  display: flex;
+  text-align: right;
+}
+.theater .theater__main .movie__eval .movie__grade.my__grade {
+  margin-left:2rem;
 }
 .theater .theater__main .movie__eval .movie__grade p span {
   color: red;
@@ -100,13 +108,12 @@ border-radius: 10px;
   margin: 0 10px;
   width: 6.3vw;
   height: auto;
-  transition: .4s;
 }
-.theater .theater__main .movie__clip .clip__pic img:hover {
+/* .theater .theater__main .movie__clip .clip__pic img:hover {
+  transition: .6s;
   transform: scale(4) translateY(-60px);
-  -webkit-transform: scale(4) translateY(-60px);
   border: 2px solid black;
-}
+} */
 
 .backToTop {
   position:absolute;

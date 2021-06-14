@@ -21,7 +21,7 @@
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .theater2 .door {
   width: 25vw;
@@ -29,9 +29,13 @@
   bottom:5vh;
   left: 38%;
   cursor: pointer;
+  z-index: 1;
 }
-.theater2 .door:hover {
-  transform: scale(1.1);
+.theater2 #enterInfo {
+  position: relative;
+  top: 190px;
+  opacity: .2;
+  font-size: 20px;
 }
 .theater2 .arrow {
   width: 5vw;
