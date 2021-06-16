@@ -29,7 +29,7 @@ body {
   top: 23vh;
   left: 21vw;
 }
-.theater .theater__main img {
+.theater .theater__main #moviePoster {
   height: 25vw;
   border-radius: 10px;
 }
@@ -51,14 +51,6 @@ body {
 .theater .theater__main .movie__eval p {
   margin-top: 15px;
   color: whitesmoke;
-}
-.theater .theater__main .movie__eval .movie__release {
-}
-.theater .theater__main .movie__eval .movie__release p {
-  
-}
-.theater .theater__main .movie__eval .movie__grade {
-
 }
 .theater .theater__main .movie__eval .movie__review {
   display: flex;
@@ -91,9 +83,6 @@ border-radius: 10px;
 .theater .theater__main .movie__story .story__info::-webkit-scrollbar-track {
   background-color: gray;
 }
-.theater .theater__main .movie__clip {
-  
-}
 .theater .theater__main .movie__clip .clip__pic {
   width: 37vw;
   display: flex;
@@ -108,16 +97,91 @@ border-radius: 10px;
   margin: 0 10px;
   width: 6.3vw;
   height: auto;
+  border: 2px solid black;
 }
-/* .theater .theater__main .movie__clip .clip__pic img:hover {
+.theater .theater__main .movie__clip .clip__pic .clips:hover {
   transition: .6s;
   transform: scale(4) translateY(-60px);
-  border: 2px solid black;
-} */
+}
 
 .backToTop {
   position:absolute;
   right: 4vw;
   bottom:4vh;
   
+}
+
+@media screen and ( max-width: 1023px ) {
+  .theater {
+    font-size: 18px;
+  }
+  .theater #backGround {
+    width: 120vw;
+    height: 50vh;
+    position: relative;
+    left: -40px;
+    top: 10px;
+  }
+  .theater .theater__main {
+    width: 80vw;
+    top: 42vh;
+    left: 5vw;
+  }
+  .theater .theater__main #moviePoster {
+    position: absolute;
+    height: 26vh;
+    top: -29vh;
+    left: 7vw;
+    border-radius: 3px;
+  }
+  .theater .theater__main .movie__info {
+    width: 100vw;
+  }
+  .theater .theater__main .movie__title {
+    position: absolute;
+    top: -35vh;
+    left: 8vw;
+    font-size: 18px;
+  }
+  .theater .theater__main .movie__eval {
+    display: inline;
+    position: absolute;
+    top: -27vh;
+    right: 1vw;
+  }
+  .theater .theater__main .movie__eval p {
+    margin: 8px 0 20px 0;
+  }
+  .theater .theater__main .movie__eval .movie__review {
+    display: inline;
+    text-align: start;
+  }
+  .theater .theater__main .movie__eval .movie__grade.my__grade {
+    margin-left:0;
+  }
+  .theater .theater__main .movie__story {
+    position: relative;
+    top: 12vh;
+    width: 85vw;
+  }
+  .theater .theater__main .movie__story .story__info {
+    font-size: 15px;
+    line-height: 1.1rem;
+  }
+  .theater .theater__main .movie__clip {
+    position: relative;
+    top: 14vh;
+  }
+  .theater .theater__main .movie__clip .clip__pic {
+    width: 80vw;
+    border-width: 5px 0;
+  }
+  .theater .theater__main .movie__clip .clip__pic img {
+    margin: 0 2px;
+    width: 14vw;
+  }
+  /* .theater .theater__main .movie__clip .clip__pic .clips:hover {
+    transition: .6s;
+    transform: scale(4) translateY(-60px);
+  } */
 }

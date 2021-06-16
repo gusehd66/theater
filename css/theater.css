@@ -130,3 +130,45 @@
   }
 }
 
+@media screen and ( max-width: 1023px ) {
+  .theater2 .door {
+    height: 50vh; 
+    width: auto;
+    bottom:1vh;
+    left: 14%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .theater2 #enterInfo {
+    top: 400px;
+    font-size: 14px;
+  }
+  .theater2 .arrow {
+    width: 10vw;
+    bottom: 15vh;
+  }
+  .theater2 .arrow.left {
+    left: 5vw;
+    
+  }
+  .theater2 .arrow.right {
+    right: 5vw;
+  }
+  .theater2 .theater2__room {
+    font-size: 18vw;
+    top: 7vh;
+    left: 45vw;
+  }
+  .theater2 #sheet {
+    display: none;
+  }
+  .theater2 .theater2__showing {
+    font-size: 1.4rem;
+    right: 52vw;
+    top: 17vh;
+  }
+  .theater2 .theater2__showing img {
+    margin-top: 10px;
+    width: 33vw;
+  }
+}
