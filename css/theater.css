@@ -27,7 +27,8 @@
   width: 25vw;
   position: absolute;
   bottom:5vh;
-  left: 38%;
+  left: 50vw;
+  margin-left: -12.5vw;
   cursor: pointer;
   z-index: 1;
 }
@@ -132,16 +133,18 @@
 
 @media screen and ( max-width: 1023px ) {
   .theater2 .door {
-    height: 50vh; 
-    width: auto;
+    height: auto; 
+    width: 50vw;
     bottom:1vh;
-    left: 14%;
+    left: 50vw;
+    margin-left: -25vw;
     cursor: pointer;
     z-index: 1;
   }
   .theater2 #enterInfo {
-    top: 400px;
+    top: 97vh;
     font-size: 14px;
+    z-index: 2;
   }
   .theater2 .arrow {
     width: 10vw;
@@ -149,7 +152,6 @@
   }
   .theater2 .arrow.left {
     left: 5vw;
-    
   }
   .theater2 .arrow.right {
     right: 5vw;
@@ -163,8 +165,10 @@
     display: none;
   }
   .theater2 .theater2__showing {
+    width: 50vw;
     font-size: 1.4rem;
-    right: 52vw;
+    left: 50vw;
+    margin-left: -25vw;
     top: 17vh;
   }
   .theater2 .theater2__showing img {
