@@ -96,15 +96,16 @@ border-radius: 10px;
 .theater .theater__main .movie__clip .clip__pic img {
   margin: 0 10px;
   width: 6.3vw;
-  height: auto;
+  height: 8.3vh;
   border: 2px solid black;
 }
-.theater .theater__main .movie__clip .clip__pic .clips:hover {
+.theater .theater__main .movie__clip .clip__pic .clips:hover img{
   transition: .6s;
   transform: scale(4) translateY(-60px);
 }
 
 .backToTop {
+  cursor: pointer;
   position:absolute;
   right: 4vw;
   bottom:4vh;

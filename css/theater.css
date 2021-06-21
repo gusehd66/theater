@@ -165,9 +165,11 @@
     display: none;
   }
   .theater2 .theater2__showing {
+    text-align: center;
+    left: 50vw;
     width: 50vw;
     font-size: 1.4rem;
-    left: 50vw;
+    /* left: 50vw; */
     margin-left: -25vw;
     top: 17vh;
   }
